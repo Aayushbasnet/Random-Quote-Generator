@@ -1,25 +1,47 @@
-body{
+body {
     background: #352f5b;
     color: antiquewhite;
-  }
-  
-  .quotes {
+}
+
+.container {
+    min-height: 400px;
+}
+
+.quotes {
     text-align: center;
-  }
-  
-  .generateBtn {
+}
+
+.generateBtn {
     font-size: 18px;
     margin-top: 10px;
-  }
-  
-  .generateBtn > button{
+}
+
+.generateBtn>button {
+
     padding: 10px;
     font-weight: 600;
     border: 1px solid gray;
     border-radius: 4px;
-    outline: none ;
-  }
-  
-  .display_quote{
-    min-height: 300px;
-  }
+    outline: none;
+}
+
+.display_quote {
+    position: relative;
+    min-height: 100px;
+}
+
+.author {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 15px 15px 0;
+    text-align: end;
+}
+
+.quote {
+    font-size: 22px;
+}
+
+.author {
+    font-size: 20px;
+}
