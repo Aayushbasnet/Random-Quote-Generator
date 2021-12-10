@@ -21,36 +21,25 @@ const quoteGen = (callback) =>{
         }
     });
     request.open('GET', 'https://type.fit/api/quotes');
+    // request.open('GET', 'quote.json');
     request.send();
 };
 
-// quoteGen((err, data) => {
-//     if(err){
-//         console.log(err);
-//     }else{
-        
-//     }
-// });
-
 gBtn.addEventListener('click', e =>{
-    // console.log(e.target);
-    // display_quote.textContent = 'hello';
     quoteGen((err, data) =>{
         if(err){
             console.log('Cannot fetch the data');
         }else{
-            // console.log(data.length);
             const newInt = randInt(0, data.length);
             var prevInt = -1;
             if(newInt != prevInt){
                 quote.textContent = `" ${data[newInt].text} "`;
                 author.textContent = `- ${data[newInt].author}`;
                 prevInt = newInt;
+                console.log('same value', newInt, prevInt);
             }else{
                 console.log('same value', newInt, prevInt);
             }
-            
         }
     });
-
 });
