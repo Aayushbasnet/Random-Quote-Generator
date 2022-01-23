@@ -1,6 +1,11 @@
 # Random-Quote-Generator
 A random quote generator webapp using html, css, js and type.fit api
 
+## Note:
+ ### You can find the source code in master branch
+
+***
+
 ## Developed using 
 > ### Languages:<br>
   > 1. HTML
